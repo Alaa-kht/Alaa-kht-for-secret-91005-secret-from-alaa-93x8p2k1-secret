@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Nancy 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f172a;
+      color: #f9fafb;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .hero {
+      min-height: 70vh;
+      padding: 32px 16px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: radial-gradient(circle at top left, #fb7185, #0f172a);
+    }
+    .hero-heart { font-size: 64px; margin-bottom: 8px; }
+    .hero h1 { font-size: 28px; margin-bottom: 6px; }
+    .hero p {
+      max-width: 480px;
+      margin: 0 auto 10px;
+      opacity: 0.95;
+      font-size: 14px;
+    }
+    .hero-photo {
+      margin-top: 14px;
+      max-width: 260px;
+      border-radius: 18px;
+      border: 2px solid #fecaca;
+      overflow: hidden;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+    }
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      -webkit-user-drag: none;
+      user-drag: none;
+      pointer-events: none;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 10px 22px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(90deg, #fb7185, #f97316);
+      color: #0f172a;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .section { padding: 28px 16px; max-width: 960px; margin: 0 auto; }
+    .section-title { font-size: 22px; margin-bottom: 12px; text-align: center; }
+
+    .timeline { border-left: 2px solid #4b5563; padding-left: 14px; margin-top: 10px; }
+    .timeline-item { margin-bottom: 14px; position: relative; }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -11px;
+      top: 6px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #fb7185;
+    }
+    .timeline-date {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9ca3af;
+    }
+    .timeline-title { font-weight: 600; margin-top: 3px; }
+    .timeline-text { font-size: 13px; color: #e5e7eb; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #334155;
+      -webkit-user-drag: none;
+      user-drag: none;
+      pointer-events: none;
+    }
+    .gallery a { display: block; }
+
+    .reasons-list {
+      list-style: none;
+      margin-top: 8px;
+    }
+    .reasons-list li {
+      padding: 7px 9px;
+      margin-bottom: 6px;
+      border-radius: 12px;
+      background: #111827;
+      border: 1px solid #1f2937;
+      font-size: 13px;
+    }
+
+    .letter {
+      background: #020617;
+      border-radius: 16px;
+      padding: 16px;
+      border: 1px solid #1f2937;
+      font-size: 14px;
+      white-space: pre-line;
+    }
+
+    footer { text-align: center; font-size: 11px; padding: 14px; color: #9ca3af; }
+
+    @media (min-width: 768px) {
+      .hero h1 { font-size: 32px; }
+      .hero-photo { max-width: 320px; }
+      .gallery img { height: 170px; }
+    }
+  </style>
+  <script>
+    document.addEventListener('contextmenu', function(e){e.preventDefault();});
+    document.addEventListener('touchstart', function(e){ if(e.touches.length>1) e.preventDefault(); }, {passive:false});
+  </script>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-heart">❤️</div>
+    <h1>For Nancy, from Alaa</h1>
+    <p>
+      This is our little corner of the internet. Just you, me, and the memories
+      we&apos;ve been collecting since 6/3/2023.
+      You were born on 28/5/2004, but every day with you feels like a new birthday for my heart.
+    </p>
+    <div class="hero-photo">
+      <img src="https://drive.google.com/uc?export=view&id=1EpHSpZzZt3AJRKDMAxZFf210gKaNYI8w" alt="Nancy &amp; Alaa">
+    </div>
+    <a href="#gallery" class="btn">See our memories</a>
+  </section>
+
+  <section class="section" id="story">
+    <h2 class="section-title">Our Story</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">6 March 2023</div>
+        <div class="timeline-title">The beginning</div>
+        <p class="timeline-text">
+          The day we decided to be more than just two people talking. Since then, everything
+          has felt a little warmer, a little brighter.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">28 May 2004</div>
+        <div class="timeline-title">Your day</div>
+        <p class="timeline-text">
+          The world got you that day. I got lucky later, but I&apos;m grateful every single time
+          I remember that you exist.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Everyday</div>
+        <div class="timeline-title">Us now</div>
+        <p class="timeline-text">
+          It&apos;s not just big days or big events. It&apos;s the chats, the selfies, the small jokes,
+          the way you say my name – all the tiny things that make &quot;us&quot;.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2 class="section-title">Our Photos</h2>
+    <p style="text-align:center; font-size:13px; color:#d1d5db;">
+      Tap any photo to open it in full screen and swipe through our moments.
+    </p>
+    <div class="gallery">
+      <a href="photo1.html"><img src="https://drive.google.com/uc?export=view&id=1uKrKpPySCJVvnlXf8pm54rcmBaOATYUI" alt="Us 1"></a>
+      <a href="photo2.html"><img src="https://drive.google.com/uc?export=view&id=1p3LYxM99-jCl69bybvAtwis4ytfKS99L" alt="Us 2"></a>
+      <a href="photo3.html"><img src="https://drive.google.com/uc?export=view&id=1khWxOaxL4n7iCJQhAyh_YIwmIQZK5Qp4" alt="Us 3"></a>
+      <a href="photo4.html"><img src="https://drive.google.com/uc?export=view&id=1vkJUpozmu3gMX7yyRL1bEL7BO4SG31kz" alt="Us 4"></a>
+      <a href="photo5.html"><img src="https://drive.google.com/uc?export=view&id=1rAWN44T2vg-8ZZE3duAkuK7e5hgOb8br" alt="Us 5"></a>
+      <a href="photo6.html"><img src="https://drive.google.com/uc?export=view&id=1omLsK5gVKOTdEOljbHjXiJbBfxYsVrqM" alt="Us 6"></a>
+      <a href="photo7.html"><img src="https://drive.google.com/uc?export=view&id=1oKIKRJBZLKq8AIWTX4pw5x13aIQIg0A6" alt="Us 7"></a>
+      <a href="photo8.html"><img src="https://drive.google.com/uc?export=view&id=1nR5ZcU-r8RAXhPhLAKFiIN_j3lbbbB7Z" alt="Us 8"></a>
+      <a href="photo9.html"><img src="https://drive.google.com/uc?export=view&id=1nEwBs8IQZT05CLqp5FM7dp_p5fJ5OwHr" alt="Us 9"></a>
+      <a href="photo10.html"><img src="https://drive.google.com/uc?export=view&id=1l9BNHx2e-i-vbcHLT8RseM397o5Mw1no" alt="Us 10"></a>
+      <a href="photo11.html"><img src="https://drive.google.com/uc?export=view&id=1kJIQxw2QNYTCZB4McqzlLRoo04SLIVjH" alt="Us 11"></a>
+      <a href="photo12.html"><img src="https://drive.google.com/uc?export=view&id=1j5U2u9T2oKfyL3FxtsmirtIiqSANLEb6" alt="Us 12"></a>
+      <a href="photo13.html"><img src="https://drive.google.com/uc?export=view&id=1gpDC9vGG_v854vV0ScNFXdJjMwq8objR" alt="Us 13"></a>
+      <a href="photo14.html"><img src="https://drive.google.com/uc?export=view&id=1cLtcsjjNf3nfTMJxu2qCFIr46SVZvdc_" alt="Us 14"></a>
+      <a href="photo15.html"><img src="https://drive.google.com/uc?export=view&id=1YlJv2mMpScvBDq3vjsZecB4mCbqVmwgz" alt="Us 15"></a>
+      <a href="photo16.html"><img src="https://drive.google.com/uc?export=view&id=1Y-k4cCswa6gds044nHmeIBX8CpqqYBiB" alt="Us 16"></a>
+      <a href="photo17.html"><img src="https://drive.google.com/uc?export=view&id=1VpqqsN12kJMHIqVr5Sz2s7YHWidxw5Lf" alt="Us 17"></a>
+      <a href="photo18.html"><img src="https://drive.google.com/uc?export=view&id=1Ugb-Ff3ZGHUlJtJ8T4wWxmrrdtBn8AxR" alt="Us 18"></a>
+      <a href="photo19.html"><img src="https://drive.google.com/uc?export=view&id=1EpHSpZzZt3AJRKDMAxZFf210gKaNYI8w" alt="Us 19"></a>
+      <a href="photo20.html"><img src="https://drive.google.com/uc?export=view&id=1A8MmcRGgD7Z66Ai1Jwl8cM7N1U0AG9Hb" alt="Us 20"></a>
+      <a href="photo21.html"><img src="https://drive.google.com/uc?export=view&id=1z6WvvPYKg_SCx5JorF0kobAckahli2cz" alt="Us 21"></a>
+      <a href="photo22.html"><img src="https://drive.google.com/uc?export=view&id=1wk_p4f70cn_wapt8PmWdCQbkPwMpPpaq" alt="Us 22"></a>
+      <a href="photo23.html"><img src="https://drive.google.com/uc?export=view&id=1lDJYgypzcno0TC6245duvWhBzUvYDns-" alt="Us 23"></a>
+      <a href="photo24.html"><img src="https://drive.google.com/uc?export=view&id=1UbEjGFwgmvHyi2P4nbhzz5WKQE-mAoqQ" alt="Us 24"></a>
+      <a href="photo25.html"><img src="https://drive.google.com/uc?export=view&id=1IsvQoi6YgLHxnZC6ZKng4d8Nf15Yia6Q" alt="Us 25"></a>
+      <a href="photo26.html"><img src="https://drive.google.com/uc?export=view&id=1-S90oRqleNjGMtqdCp_Cy9BsV2yH_Q6S" alt="Us 26"></a>
+    </div>
+  </section>
+
+  <section class="section" id="reasons">
+    <h2 class="section-title">Why I love you</h2>
+    <ul class="reasons-list">
+      <li>Your smile makes even heavy days feel lighter.</li>
+      <li>The way you care about people (and about me) without even trying.</li>
+      <li>How you listen to me, even when I repeat the same stories.</li>
+      <li>Your laugh, especially when you try not to laugh.</li>
+      <li>The way you say my name, like it actually belongs to you.</li>
+      <li>Your kindness, even when you are tired or upset.</li>
+      <li>The way you push me to be a better version of myself.</li>
+      <li>The little details you remember about us and our moments.</li>
+      <li>Because normal days feel special when you&apos;re in them.</li>
+      <li>Because you&apos;re Nancy – and that is more than enough.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="letter">
+    <h2 class="section-title">A letter for you</h2>
+    <div class="letter">
+Dear Nancy,
+
+I don&apos;t know how to say everything that I feel,
+but I know this: my life became softer and warmer
+since you walked into it.
+
+Thank you for your patience, your smile, your support,
+your random messages, your &quot;are you okay?&quot; texts,
+your laughs, your eyes, your jokes, and your love.
+
+We don&apos;t have a perfect story, but it&apos;s ours,
+and I wouldn&apos;t trade it for anything.
+I hope we keep adding more photos, more memories,
+and more reasons to smile together.
+
+With love,
+Alaa
+    </div>
+  </section>
+
+  <footer>
+    Made just for you 💌
+  </footer>
+</body>
+</html>
